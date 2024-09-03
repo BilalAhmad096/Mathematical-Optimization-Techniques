@@ -31,5 +31,28 @@ Advantages:
 Efficiency: Reduces the complexity of solving large-scale, mixed-integer, or stochastic optimization problems.
 Specialization: Particularly effective for problems with a decomposable structure, such as those in logistics, energy systems, and telecommunications.
 Use Cases: Benders decomposition is widely used in operations research, particularly in planning and scheduling problems, as well as in network design and facility location problems.
+
+4. Gurobi
+Overview:
+Gurobi is a state-of-the-art optimization solver designed for solving complex mathematical optimization problems. It provides a robust set of tools for linear programming (LP), mixed-integer programming (MIP), quadratic programming (QP), and other types of optimization.
+
+Capabilities:
+
+High Performance: Gurobi is known for its speed and efficiency, particularly in solving large-scale optimization problems.
+Wide Applicability: It can solve a wide range of optimization problems, including linear, integer, quadratic, and nonlinear problems.
+Ease of Integration: Gurobi has APIs for various programming languages including Python, making it easy to integrate with existing workflows.
+Algorithms:
+Gurobi uses cutting-edge algorithms for:
+
+Simplex and Barrier Methods: For solving linear programming problems.
+Branch-and-Bound: For mixed-integer programming.
+Quadratic and Conic Optimization: For handling quadratic and second-order cone problems.
+Use Cases:
+Gurobi is widely used in industries like finance, logistics, energy, and telecommunications for optimization tasks such as portfolio optimization, supply chain management, scheduling, and resource allocation.
+
 Summary
+
+This repository contains implementations of various mathematical optimization techniques, each suited to different types of problems. Whether you're dealing with linear programming, nonlinear optimization, or complex mixed-integer problems, the techniques and algorithms provided here will help you find the best possible solution efficiently.
+
+
 These optimization techniques provide powerful tools for solving a variety of complex problems across different domains. SciPy.optimize is a versatile and accessible tool for a wide range of optimization tasks, ADMM is a robust method for distributed and large-scale optimization, and Benders decomposition is particularly effective for structured large-scale problems. By choosing the appropriate technique, one can significantly improve the efficiency and effectiveness of solving optimization problems.
