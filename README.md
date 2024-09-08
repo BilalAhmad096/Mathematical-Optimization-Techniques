@@ -50,9 +50,43 @@ Quadratic and Conic Optimization: For handling quadratic and second-order cone p
 Use Cases:
 Gurobi is widely used in industries like finance, logistics, energy, and telecommunications for optimization tasks such as portfolio optimization, supply chain management, scheduling, and resource allocation.
 
+
+5. CPLEX
+Overview: IBM's CPLEX is a powerful optimization solver known for solving a wide range of mathematical optimization problems, including linear programming (LP), mixed-integer programming (MIP), and quadratic programming (QP). It is widely used in both academic and industrial settings for its high performance and robustness in solving complex problems.
+
+Capabilities:
+
+Broad Problem Scope: CPLEX can handle a variety of optimization problems, such as LP, MILP, QP, MIQP, and Quadratically Constrained Programming (QCP).
+High Performance: CPLEX is optimized for performance and can efficiently solve large-scale optimization problems.
+Python Integration: Through the docplex library, CPLEX provides a convenient Python API, making it easy to integrate into Python workflows.
+Advanced Features: CPLEX offers advanced capabilities like solution pools, tuning tools, and support for complex multi-objective optimization problems.
+Algorithms:
+
+Simplex Method: Efficient for solving LP problems.
+Barrier Method: Used for solving large-scale linear and quadratic programming problems.
+Branch-and-Cut: For mixed-integer linear and quadratic programming problems.
+Cutting Plane Algorithms: To further optimize MIP and MIQP problems.
+Use Cases: CPLEX is used across various industries such as supply chain optimization, transportation and logistics, energy, and finance. Common applications include network design, production planning, scheduling, and risk analysis in portfolio optimization.
+
+6. GLPK
+Overview: GLPK (GNU Linear Programming Kit) is an open-source solver developed by the GNU Project, primarily designed to solve large-scale linear programming (LP), mixed-integer programming (MIP), and other related problems. It is a robust, lightweight solver ideal for use in academic research, prototyping, and scenarios where a free solver is needed.
+
+Capabilities:
+
+Linear Programming (LP) and Mixed-Integer Programming (MIP): GLPK supports these core optimization problem types.
+Open Source: Completely free and open-source, making it accessible for all types of users.
+Modeling Language: GLPK uses its own modeling language (GMPL), which is similar to AMPL, making it relatively easy to define optimization models.
+Cross-Platform: Works on various operating systems, including Linux, Windows, and macOS.
+Algorithms:
+
+Simplex Method: GLPK uses both primal and dual variants of the Simplex algorithm for solving LP problems.
+Branch-and-Bound: Used for mixed-integer linear programming (MILP) problems.
+Interior-Point Method: For solving large-scale LP problems efficiently.
+Use Cases: GLPK is commonly used in academic environments, for prototyping, and in open-source projects. Typical use cases include transportation problems, scheduling, resource allocation, and cost minimization problems in logistics and operations research.
+
 Summary
 
 This repository contains implementations of various mathematical optimization techniques, each suited to different types of problems. Whether you're dealing with linear programming, nonlinear optimization, or complex mixed-integer problems, the techniques and algorithms provided here will help you find the best possible solution efficiently.
 
 
-These optimization techniques provide powerful tools for solving a variety of complex problems across different domains. SciPy.optimize is a versatile and accessible tool for a wide range of optimization tasks, ADMM is a robust method for distributed and large-scale optimization, and Benders decomposition is particularly effective for structured large-scale problems. By choosing the appropriate technique, one can significantly improve the efficiency and effectiveness of solving optimization problems.
+In summary, optimization techniques such as SciPy.optimize, Gurobi, CPLEX, GLPK, ADMM, and Benders Decomposition offer powerful tools for solving a wide range of complex problems across various domains. Each method or solver has its own strengths—ranging from the flexibility and accessibility of SciPy and GLPK, to the high-performance capabilities of commercial solvers like Gurobi and CPLEX, and specialized techniques like ADMM and Benders Decomposition for large-scale or structured problems. By selecting the most appropriate approach, users can significantly enhance the efficiency and effectiveness of their optimization efforts.
