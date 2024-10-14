@@ -13,7 +13,8 @@ model.obj = Objective(expr=(model.x - 1)**2 + (model.y - 1)**2)
 # Add a constraint
 model.constr = Constraint(expr=model.x + model.y == 1)
 
-# Create IPOPT solver instance
+# Create a solver instance. Uncomment the solver for use.
+# solver = SolverFactory('cplex')
 solver = SolverFactory('ipopt')
 
 # Solve the model
